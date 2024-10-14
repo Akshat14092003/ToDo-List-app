@@ -17,7 +17,6 @@
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
-
 }
 .todoapp h2{
     color: #002765;
@@ -126,4 +125,59 @@ ul li .edit {
 
 ul li .edit:hover {
     background-color: #edeef0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .todoapp {
+        padding: 30px 20px 50px;
+    }
+    
+    button {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+    
+    .todoapp h2 img {
+        width: 25px;
+    }
+    
+    ul li {
+        font-size: 16px;
+        padding: 10px 8px 10px 35px;
+    }
+    
+    ul li span, ul li .edit {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .todoapp {
+        padding: 20px 15px 40px;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-size: 13px;
+    }
+
+    .todoapp h2 {
+        font-size: 22px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 8px 6px 8px 30px;
+    }
+
+    ul li span, ul li .edit {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
